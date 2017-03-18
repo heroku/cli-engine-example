@@ -18,11 +18,11 @@
     ]
   },
   "dependencies": {
-    "cli-engine": "^1.0.8",
-    "cli-engine-example-plugin": "^2.0.5"
+    "cli-engine": "2.0.2",
+    "cli-engine-example-plugin": "2.1.1"
   },
   "devDependencies": {
-    "babel-cli": "6.23.0"
+    "babel-cli": "6.24.0"
   },
   "homepage": "https://github.com/heroku/cli-engine",
   "keywords": [
