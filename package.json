@@ -6,8 +6,8 @@
   "bin": {
     "cli-engine-example": "bin/run"
   },
-  "bugs": "https://github.com/heroku/cli-engine/issues",
-  "cli-engine": {
+  "bugs": "https://github.com/heroku/cli-engine-example/issues",
+  "cli-engine-example": {
     "node": "7.6.0",
     "s3": {
       "bucket": "heroku-cli-assets",
@@ -22,16 +22,19 @@
     "cli-engine-example-plugin": "2.1.1"
   },
   "devDependencies": {
-    "babel-cli": "6.24.0"
+    "jest": "19.0.2"
   },
-  "homepage": "https://github.com/heroku/cli-engine",
+  "jest": {
+    "testEnvironment": "node",
+    "rootDir": "./"
+  },
+  "homepage": "https://github.com/heroku/cli-engine-example",
   "keywords": [
-    "cli"
+    "cli-engine-example"
   ],
   "license": "ISC",
-  "repository": "https://github.com/heroku/cli-engine",
+  "repository": "https://github.com/heroku/cli-engine-example",
   "scripts": {
-    "build": "../bin/cli-build",
-    "release": "../bin/cli-release"
+    "test": "jest"
   }
 }
