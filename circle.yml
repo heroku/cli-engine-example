@@ -20,6 +20,7 @@ stages:
 
           yarn --prefer-offline --pure-lockfile
           ./node_modules/.bin/jest
+          ./bin/run cli:test
 
       - type: test-results-store
         path: /tmp/test-results
