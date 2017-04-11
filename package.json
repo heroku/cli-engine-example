@@ -18,8 +18,8 @@
     ]
   },
   "dependencies": {
-    "cli-engine": "2.0.2",
-    "cli-engine-example-plugin": "2.1.1"
+    "cli-engine": "2.0.10",
+    "cli-engine-example-plugin": "2.1.2"
   },
   "devDependencies": {
     "jest": "19.0.2"
