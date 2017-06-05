@@ -982,15 +982,11 @@ html-encoding-sniffer@^1.0.1:
   dependencies:
     whatwg-encoding "^1.0.1"
 
-http-call@1.1.2:
+http-call@1.1.2, http-call@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/http-call/-/http-call-1.1.2.tgz#bfec491443c86104451ae2764ad5307da0feea4a"
   dependencies:
     tunnel-agent "^0.6.0"
-
-http-call@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/http-call/-/http-call-1.1.0.tgz#e0a43f408876632019cb9a041ee7fa0a43365cc6"
 
 http-signature@~1.1.0:
   version "1.1.1"
@@ -1162,13 +1158,13 @@ istanbul-api@^1.1.1:
     mkdirp "^0.5.1"
     once "^1.4.0"
 
-istanbul-lib-coverage@^1.0.0, istanbul-lib-coverage@^1.0.0-alpha.0, istanbul-lib-coverage@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.0.1.tgz#f263efb519c051c5f1f3343034fc40e7b43ff212"
-
-istanbul-lib-coverage@^1.1.1:
+istanbul-lib-coverage@^1.0.0, istanbul-lib-coverage@^1.0.0-alpha.0, istanbul-lib-coverage@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.1.tgz#73bfb998885299415c93d38a3e9adf784a77a9da"
+
+istanbul-lib-coverage@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.0.1.tgz#f263efb519c051c5f1f3343034fc40e7b43ff212"
 
 istanbul-lib-hook@^1.0.7:
   version "1.0.7"
@@ -1720,15 +1716,9 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
 
-netrc-parser@2.0.2:
+netrc-parser@2.0.2, netrc-parser@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/netrc-parser/-/netrc-parser-2.0.2.tgz#6ca81104d84993f81ac9654c5d3f517897c1d2f7"
-  dependencies:
-    lex "^1.7.9"
-
-netrc-parser@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/netrc-parser/-/netrc-parser-2.0.1.tgz#bd1d8b1eaf9555d4cceb051b74da1ab0a018e440"
   dependencies:
     lex "^1.7.9"
 
