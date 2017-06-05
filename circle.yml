@@ -15,7 +15,8 @@ jobs:
       - run: yarn
       - run: jest
       - run: ./bin/run cli:test
-      - deploy: |
+      - deploy:
+        command: |
           set -ex
           TAG=`git describe --exact-match HEAD || echo NOTAG`
           if [ "${TAG}" != "NOTAG" ]; then
