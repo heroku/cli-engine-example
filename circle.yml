@@ -6,25 +6,26 @@ containerInfo:
 stages:
   build:
     workDir: ~/cli-engine-example
-    environment:
-      - CIRCLE_PROJECT_USERNAME: dickeyxxx
-      - CIRCLE_PROJECT_REPONAME: cli-engine-example
-      - HEROKU_DEBUG: 1
     steps:
       - type: checkout
       - type: cache-restore
         key: cli-engine-example{{checksum "package.json"}}
-      - type: shell
+      - run: yarn
+      - run: jest
+      - run: ./bin/run cli:test
+      - type: deploy
+        shell: /bin/bash
         command: |
-          set -exu
-
-          yarn --prefer-offline --pure-lockfile
-          ./node_modules/.bin/jest
-          ./bin/run cli:test
-
-      - type: test-results-store
-        path: /tmp/test-results
+          set -ex
+          TAG=`git describe --exact-match HEAD || echo NOTAG`
+          if [ "${TAG}" != "NOTAG" ]; then
+            yarn run release stable
+          fi
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            yarn run release beta
+          fi
       - type: cache-save
         key: cli-engine-example{{checksum "package.json"}}
         paths:
           - /usr/local/share/.cache/yarn
+          - ~/cli-engine-example/node_modules
