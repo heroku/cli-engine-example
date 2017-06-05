@@ -2,11 +2,9 @@
 version: 2
 jobs:
   build:
+    working_directory: /tmp/cli-engine-example
     docker:
       - image: dickeyxxx/cli-engine-docker:v1.2.0
-    working_directory: /tmp/cli-engine-example
-stages:
-  build:
     steps:
       - checkout
       - restore_cache:
@@ -17,9 +15,7 @@ stages:
       - run: yarn
       - run: jest
       - run: ./bin/run cli:test
-      - type: deploy
-        shell: /bin/bash
-        command: |
+      - deploy: |
           set -ex
           TAG=`git describe --exact-match HEAD || echo NOTAG`
           if [ "${TAG}" != "NOTAG" ]; then
