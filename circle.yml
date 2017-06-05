@@ -19,10 +19,10 @@ stages:
           set -ex
           TAG=`git describe --exact-match HEAD || echo NOTAG`
           if [ "${TAG}" != "NOTAG" ]; then
-            yarn run release stable
+            cli-release stable
           fi
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
-            yarn run release beta
+            cli-release beta
           fi
       - type: cache-save
         key: cli-engine-example{{checksum "package.json"}}
