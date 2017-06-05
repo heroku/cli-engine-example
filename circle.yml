@@ -1,15 +1,19 @@
 ---
 version: 2
-executorType: docker
-containerInfo:
-  - image: dickeyxxx/cli-engine-docker:v1.2.0
+jobs:
+  build:
+    docker:
+      - image: dickeyxxx/cli-engine-docker:v1.2.0
+    working_directory: /tmp/cli-engine-example
 stages:
   build:
-    workDir: ~/cli-engine-example
     steps:
-      - type: checkout
-      - type: cache-restore
-        key: cli-engine-example{{checksum "package.json"}}
+      - checkout
+      - restore_cache:
+          keys:
+            - cli-engine-example-{{ .Branch }}-{{checksum "package.json"}}
+            - cli-engine-example-{{ .Branch }}
+            - cli-engine-example-master
       - run: yarn
       - run: jest
       - run: ./bin/run cli:test
@@ -24,8 +28,13 @@ stages:
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
             cli-release beta
           fi
-      - type: cache-save
-        key: cli-engine-example{{checksum "package.json"}}
-        paths:
-          - /usr/local/share/.cache/yarn
-          - ~/cli-engine-example/node_modules
+      - save_cache:
+          key: cli-engine-example-{{ .Branch}}-{{checksum "package.json"}}
+          paths:
+            - /tmp/cli-engine-example/node_modules
+            - /usr/local/share/.cache/yarn
+      - save_cache:
+          key: cli-engine-example-{{ .Branch}}
+          paths:
+            - /usr/local/share/.cache/yarn
+
