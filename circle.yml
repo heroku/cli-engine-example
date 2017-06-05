@@ -19,11 +19,11 @@ jobs:
           command: |
             set -ex
             TAG=`git describe --exact-match HEAD || echo NOTAG`
-            if [ "${TAG}" != "NOTAG" ]; then
-              cli-release stable
-            fi
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               cli-release beta
+            fi
+            if [ "${TAG}" != "NOTAG" ]; then
+              cli-release stable
             fi
       - save_cache:
           key: cli-engine-example-{{ .Branch}}-{{checksum "package.json"}}
