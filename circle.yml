@@ -16,15 +16,15 @@ jobs:
       - run: jest
       - run: ./bin/run cli:test
       - deploy:
-        command: |
-          set -ex
-          TAG=`git describe --exact-match HEAD || echo NOTAG`
-          if [ "${TAG}" != "NOTAG" ]; then
-            cli-release stable
-          fi
-          if [ "${CIRCLE_BRANCH}" == "master" ]; then
-            cli-release beta
-          fi
+          command: |
+            set -ex
+            TAG=`git describe --exact-match HEAD || echo NOTAG`
+            if [ "${TAG}" != "NOTAG" ]; then
+              cli-release stable
+            fi
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              cli-release beta
+            fi
       - save_cache:
           key: cli-engine-example-{{ .Branch}}-{{checksum "package.json"}}
           paths:
