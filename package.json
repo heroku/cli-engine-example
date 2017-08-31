@@ -10,6 +10,10 @@
   "cli-engine": {
     "dirname": "cli-engine",
     "node": "8.0.0",
+    "hooks": {
+      "prerun": "./lib/hooks/prerun.js",
+      "plugins:preinstall": "./lib/hooks/plugins/preinstall.js"
+    },
     "s3": {
       "bucket": "heroku-cli-assets",
       "host": "cli-assets.heroku.com"
