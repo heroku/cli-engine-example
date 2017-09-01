@@ -9,7 +9,7 @@
   "bugs": "https://github.com/heroku/cli-engine-example/issues",
   "cli-engine": {
     "dirname": "cli-engine",
-    "node": "8.0.0",
+    "node": "8.4.0",
     "s3": {
       "host": "cli-assets.heroku.com"
     },
