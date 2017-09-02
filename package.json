@@ -10,6 +10,9 @@
   "cli-engine": {
     "dirname": "cli-engine",
     "node": "8.4.0",
+    "hooks": {
+      "init": "./lib/hooks/init"
+    },
     "s3": {
       "host": "cli-assets.heroku.com"
     },
