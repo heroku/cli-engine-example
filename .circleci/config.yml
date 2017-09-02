@@ -1,0 +1,27 @@
+---
+version: 2
+jobs:
+  build:
+    working_directory: /cli
+    docker:
+      - image: node:8
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v2-yarn-{{ .Branch }}-{{checksum "yarn.lock"}}
+            - v2-yarn-{{ .Branch }}
+            - v2-yarn-master
+      - run: yarn
+      - run: {command: "./bin/run version", when: always}
+      - run:
+          when: always
+          command: |
+            npx jest --coverage --runInBand
+            bash <(curl -s https://codecov.io/bash)
+      - save_cache:
+          key: v2-yarn-{{ .Branch }}-{{checksum "yarn.lock"}}
+          paths:
+            - /cli/node_modules
+            - /cli/npm-packages-offline-cache
+            - /usr/local/share/.cache/yarn
