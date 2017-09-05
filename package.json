@@ -8,8 +8,7 @@
   },
   "bugs": "https://github.com/heroku/cli-engine-example/issues",
   "cli-engine": {
-    "dirname": "cli-engine",
-    "node": "8.4.0",
+    "commands": "./lib/commands",
     "hooks": {
       "init": "./lib/hooks/init"
     },
