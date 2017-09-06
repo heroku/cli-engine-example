@@ -10,6 +10,7 @@
   "cli-engine": {
     "bin": "cli-engine",
     "commands": "./lib/commands",
+    "userPlugins": true,
     "hooks": {
       "init": "./lib/hooks/init"
     },
