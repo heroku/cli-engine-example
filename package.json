@@ -42,6 +42,7 @@
   "license": "ISC",
   "repository": "https://github.com/heroku/cli-engine-example",
   "scripts": {
+    "prepare": "tsc",
     "test": "jest"
   }
 }
