@@ -12,8 +12,7 @@
     "commands": "./lib/commands",
     "userPlugins": true,
     "hooks": {
-      "init": "./lib/hooks/init",
-      "plugins:parse": "./lib/hooks/plugins/parse/legacy"
+      "init": "./lib/hooks/init"
     },
     "s3": {
       "host": "cli-assets.heroku.com"
