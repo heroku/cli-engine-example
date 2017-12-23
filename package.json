@@ -23,7 +23,10 @@
   },
   "dependencies": {
     "cli-engine": "^5.0.7",
-    "cli-engine-example-plugin": "^3.0.1"
+    "cli-engine-command": "^11.0.10",
+    "cli-engine-config": "^5.0.6",
+    "cli-engine-example-plugin": "^3.0.2",
+    "cli-flags": "^2.0.3"
   },
   "devDependencies": {
     "@types/node": "8.5.2",

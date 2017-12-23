@@ -486,18 +486,24 @@ ci-info@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.0.0.tgz#dc5285f2b4e251821683681c381c3388f46ec534"
 
-cli-engine-command@11.0.9:
-  version "11.0.9"
-  resolved "https://registry.yarnpkg.com/cli-engine-command/-/cli-engine-command-11.0.9.tgz#a0c75633fe3bf8b41819307fef595a479d039c50"
+cli-engine-command@11.0.10, cli-engine-command@^11.0.10:
+  version "11.0.10"
+  resolved "https://registry.yarnpkg.com/cli-engine-command/-/cli-engine-command-11.0.10.tgz#39c5a8b50b6736dc817e5aa0e94e0fd3afa3be9c"
   dependencies:
     chalk "2.3.0"
     cli-flags "^2.0.3"
 
-cli-engine-example-plugin@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/cli-engine-example-plugin/-/cli-engine-example-plugin-3.0.1.tgz#697f8757b5114f88ebf595d9589a78a6efb9ec97"
+cli-engine-config@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/cli-engine-config/-/cli-engine-config-5.0.6.tgz#af66fa9bace4da0b77fab151d381bb5f1f204aa1"
+
+cli-engine-example-plugin@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/cli-engine-example-plugin/-/cli-engine-example-plugin-3.0.2.tgz#96598064b73ef3795984bc28038ae60a68d8bbc1"
   dependencies:
-    cli-engine-command "11.0.9"
+    cli-engine-command "11.0.10"
+    cli-engine-config "^5.0.6"
+    cli-flags "^2.0.3"
     cli-ux "^2.0.12"
 
 cli-engine@^5.0.7:
