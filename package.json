@@ -22,12 +22,12 @@
     ]
   },
   "dependencies": {
-    "cli-engine": "^4.6.21",
-    "cli-engine-example-plugin": "^3.0.0"
+    "cli-engine": "^5.0.7",
+    "cli-engine-example-plugin": "^3.0.1"
   },
   "devDependencies": {
-    "@types/node": "8.5.1",
-    "jest": "21.2.1",
+    "@types/node": "8.5.2",
+    "jest": "22.0.4",
     "typescript": "2.6.2"
   },
   "jest": {
