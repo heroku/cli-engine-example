@@ -1,4 +1,4 @@
-const {Command} = require('cli-engine-command')
+const {Command} = require('@cli-engine/command')
 
 class Bar extends Command {
   async run () {

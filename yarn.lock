@@ -10,6 +10,17 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
+"@cli-engine/command@^11.0.0-beta.3":
+  version "11.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@cli-engine/command/-/command-11.0.0-beta.3.tgz#0c36ad9124c073004bc89668b3a59ae01f6b40d7"
+  dependencies:
+    chalk "^2.3.0"
+    cli-flags "^2.0.3"
+
+"@cli-engine/config@^5.0.0-beta.4":
+  version "5.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@cli-engine/config/-/config-5.0.0-beta.4.tgz#c61dd31b92163e986b3c8f102c823d31c997ae79"
+
 "@heroku/linewrap@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@heroku/linewrap/-/linewrap-1.0.0.tgz#a9d4e99f0a3e423a899b775f5f3d6747a1ff15c6"
@@ -490,7 +501,7 @@ ci-info@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.0.0.tgz#dc5285f2b4e251821683681c381c3388f46ec534"
 
-cli-engine-command@11.0.14, cli-engine-command@^11.0.14:
+cli-engine-command@11.0.14:
   version "11.0.14"
   resolved "https://registry.yarnpkg.com/cli-engine-command/-/cli-engine-command-11.0.14.tgz#409ac27a7cef1e5d2e85be4b59785c3422cc7cef"
   dependencies:
