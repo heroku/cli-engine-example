@@ -154,6 +154,10 @@ assert-plus@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
 
+assync@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/assync/-/assync-1.0.3.tgz#abfac18b29cdd51aa062b9dba4e2ceaaf3063f58"
+
 astral-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
@@ -486,32 +490,33 @@ ci-info@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.0.0.tgz#dc5285f2b4e251821683681c381c3388f46ec534"
 
-cli-engine-command@11.0.10, cli-engine-command@^11.0.10:
-  version "11.0.10"
-  resolved "https://registry.yarnpkg.com/cli-engine-command/-/cli-engine-command-11.0.10.tgz#39c5a8b50b6736dc817e5aa0e94e0fd3afa3be9c"
+cli-engine-command@11.0.14, cli-engine-command@^11.0.14:
+  version "11.0.14"
+  resolved "https://registry.yarnpkg.com/cli-engine-command/-/cli-engine-command-11.0.14.tgz#409ac27a7cef1e5d2e85be4b59785c3422cc7cef"
   dependencies:
     chalk "2.3.0"
     cli-flags "^2.0.3"
 
-cli-engine-config@^5.0.6:
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/cli-engine-config/-/cli-engine-config-5.0.6.tgz#af66fa9bace4da0b77fab151d381bb5f1f204aa1"
+cli-engine-config@^5.0.9:
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/cli-engine-config/-/cli-engine-config-5.0.9.tgz#c3f471ef80fd49ee51db094adad9bbff522e2a96"
 
-cli-engine-example-plugin@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/cli-engine-example-plugin/-/cli-engine-example-plugin-3.0.2.tgz#96598064b73ef3795984bc28038ae60a68d8bbc1"
+cli-engine-example-plugin@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/cli-engine-example-plugin/-/cli-engine-example-plugin-3.0.3.tgz#e9c22c54046118185a942856ac7fa1cf9132b250"
   dependencies:
-    cli-engine-command "11.0.10"
-    cli-engine-config "^5.0.6"
+    cli-engine-command "11.0.14"
+    cli-engine-config "^5.0.9"
     cli-flags "^2.0.3"
-    cli-ux "^2.0.12"
+    cli-ux "^2.0.14"
 
-cli-engine@^5.0.7:
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/cli-engine/-/cli-engine-5.0.7.tgz#9ae6176f2722bacee72b00088d6e17cd9c980d50"
+cli-engine@^5.0.13:
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/cli-engine/-/cli-engine-5.0.13.tgz#f42feb7518d449e02345591cd0223875a6fb1bc1"
   dependencies:
     ansi-escapes "^3.0.0"
-    cli-ux "^2.0.10"
+    assync "^1.0.3"
+    cli-ux "^2.0.12"
     cross-spawn "5.1.0"
     debug "^3.1.0"
     filesize "^3.5.11"
@@ -538,7 +543,7 @@ cli-flags@^2.0.3:
     "@heroku/linewrap" "^1.0.0"
     ts-lodash "^4.0.8"
 
-cli-ux@^2.0.10, cli-ux@^2.0.12:
+cli-ux@^2.0.12:
   version "2.0.12"
   resolved "https://registry.yarnpkg.com/cli-ux/-/cli-ux-2.0.12.tgz#1b02cb3c0f8346618d62e4a9b13294736801c713"
   dependencies:
@@ -547,6 +552,23 @@ cli-ux@^2.0.10, cli-ux@^2.0.12:
     ansi-styles "^3.2.0"
     cardinal "^1.0.0"
     chalk "^2.3.0"
+    lodash "^4.17.4"
+    moment "^2.20.1"
+    password-prompt "^1.0.3"
+    strip-ansi "^4.0.0"
+    supports-color "^5.1.0"
+    ts-lodash "^4.0.8"
+
+cli-ux@^2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/cli-ux/-/cli-ux-2.0.14.tgz#37c3610566729ca88a0579d6e3f1f8ab75cb84c6"
+  dependencies:
+    "@heroku/linewrap" "^1.0.0"
+    ansi-escapes "^3.0.0"
+    ansi-styles "^3.2.0"
+    cardinal "^1.0.0"
+    chalk "^2.3.0"
+    heroku-cli-color "^1.0.3"
     lodash "^4.17.4"
     moment "^2.20.1"
     password-prompt "^1.0.3"
@@ -1145,6 +1167,14 @@ heroku-cli-color@1.0.2:
     ansi-styles "3.2.0"
     chalk "2.3.0"
     supports-color "5.1.0"
+
+heroku-cli-color@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/heroku-cli-color/-/heroku-cli-color-1.0.3.tgz#44c125d2ba3e27df94e927d694dbc740d7712b80"
+  dependencies:
+    ansi-styles "^3.2.0"
+    chalk "^2.3.0"
+    supports-color "^5.1.0"
 
 hoek@2.x.x:
   version "2.16.3"
