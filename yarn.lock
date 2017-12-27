@@ -52,6 +52,26 @@
     strip-ansi "4.0.0"
     ts-lodash "4.0.8"
 
+"@cli-engine/engine@^6.1.4":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@cli-engine/engine/-/engine-6.1.4.tgz#642212ac7f6d041b7e152a009bb3dd018bd69d67"
+  dependencies:
+    "@heroku-cli/color" "^1.0.4"
+    assync "^1.0.4"
+    cli-ux "^2.0.15"
+    debug "^3.1.0"
+    fs-extra "^5.0.0"
+    graceful-fs "^4.1.11"
+    http-call "^4.0.6"
+    klaw "^2.1.1"
+    log-chopper "^1.0.2"
+    moment "^2.20.1"
+    rwlockfile "^1.4.12"
+    semver "5.4.1"
+    string-similarity "^1.2.0"
+    strip-ansi "4.0.0"
+    ts-lodash "4.0.8"
+
 "@cli-engine/util@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@cli-engine/util/-/util-1.0.5.tgz#a77d2fe637b88911c6c43d326bae5809dcd50274"
@@ -63,7 +83,7 @@
     del "^3.0.0"
     fs-extra "^5.0.0"
 
-"@heroku-cli/color@^1.0.3":
+"@heroku-cli/color@^1.0.3", "@heroku-cli/color@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@heroku-cli/color/-/color-1.0.4.tgz#8d55cd9fd74c9f5b0b22ecb621ef52121206cd77"
   dependencies:
@@ -240,6 +260,10 @@ assert-plus@^1.0.0:
 assync@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/assync/-/assync-1.0.3.tgz#abfac18b29cdd51aa062b9dba4e2ceaaf3063f58"
+
+assync@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/assync/-/assync-1.0.4.tgz#9814eb9a3af234988e0a750568865d2018047637"
 
 astral-regex@^1.0.0:
   version "1.0.0"
@@ -2201,6 +2225,12 @@ log-chopper@^1.0.1:
   dependencies:
     byline "5.x"
 
+log-chopper@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/log-chopper/-/log-chopper-1.0.2.tgz#a88da7a47a9f0e511eda4d5e1dc840e0eaf4547a"
+  dependencies:
+    byline "5.x"
+
 longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
@@ -2857,6 +2887,12 @@ rimraf@^2.2.8, rimraf@^2.5.1, rimraf@^2.5.4:
 rwlockfile@^1.4.11:
   version "1.4.11"
   resolved "https://registry.yarnpkg.com/rwlockfile/-/rwlockfile-1.4.11.tgz#6c54079b70c2f2a2501c7d0877a8044681f1fdc2"
+  dependencies:
+    fs-extra "^5.0.0"
+
+rwlockfile@^1.4.12:
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/rwlockfile/-/rwlockfile-1.4.12.tgz#40cef17c915207c4315c1f535a006e0d1556bcd8"
   dependencies:
     fs-extra "^5.0.0"
 
