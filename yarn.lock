@@ -71,6 +71,14 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@heroku/linewrap/-/linewrap-1.0.0.tgz#a9d4e99f0a3e423a899b775f5f3d6747a1ff15c6"
 
+"@types/ansi-styles@^2.0.30":
+  version "2.0.30"
+  resolved "https://registry.yarnpkg.com/@types/ansi-styles/-/ansi-styles-2.0.30.tgz#9a645299020a224afc6a8cd055195850b3c2af85"
+
+"@types/jest@^21.1.9":
+  version "21.1.9"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-21.1.9.tgz#a913d6224e9d8a1f24908af536f65b5bf4d489bc"
+
 "@types/node@*", "@types/node@8.5.2":
   version "8.5.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.2.tgz#83b8103fa9a2c2e83d78f701a9aa7c9539739aa5"
@@ -579,9 +587,9 @@ ci-info@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.1.2.tgz#03561259db48d0474c8bdc90f5b47b068b6bbfb4"
 
-cli-engine-example-plugin@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/cli-engine-example-plugin/-/cli-engine-example-plugin-3.0.6.tgz#d87064d69514e51bd7f9a36e98d2c7ee11b8ba46"
+cli-engine-example-plugin@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/cli-engine-example-plugin/-/cli-engine-example-plugin-3.0.7.tgz#e82064c3594061c5cc12d03e51c1eeda494c8842"
   dependencies:
     "@cli-engine/command" "^11.0.0-beta.4"
     "@cli-engine/config" "^5.0.0-beta.5"
