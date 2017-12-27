@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {run} = require('cli-engine')
+const {run} = require('@cli-engine/engine')
 const config = {
   updateDisabled: 'add update disable message here'
 }

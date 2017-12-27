@@ -24,21 +24,21 @@
   "dependencies": {
     "@cli-engine/command": "^11.0.0-beta.4",
     "@cli-engine/config": "^5.0.0-beta.5",
-    "@cli-engine/engine": "^6.1.4",
-    "@cli-engine/util": "^1.0.5",
-    "cli-engine": "^5.0.13",
-    "cli-engine-example-plugin": "^3.0.5",
-    "cli-flags": "^2.0.4"
+    "@cli-engine/engine": "^6.1.6",
+    "cli-engine-example-plugin": "^3.0.6",
+    "cli-flags": "^2.0.4",
+    "cli-ux": "^2.0.16",
+    "debug": "^3.1.0"
   },
   "devDependencies": {
+    "@cli-engine/util": "^1.0.6",
+    "@heroku-cli/tslint": "^1.0.3",
     "@types/node": "8.5.2",
     "jest": "22.0.4",
+    "prettier": "^1.9.2",
     "ts-jest": "^22.0.0",
+    "tslint": "^5.8.0",
     "typescript": "2.6.2"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "rootDir": "./"
   },
   "homepage": "https://github.com/heroku/cli-engine-example",
   "keywords": [
@@ -47,8 +47,8 @@
   "license": "ISC",
   "repository": "https://github.com/heroku/cli-engine-example",
   "scripts": {
-    "posttest": "posttest",
-    "precommit": "precommit",
+    "posttest": "cli-engine-util",
+    "precommit": "cli-engine-util",
     "prepare": "cli-engine-util",
     "test": "jest"
   }
