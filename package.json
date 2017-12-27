@@ -42,6 +42,10 @@
     "tslint": "^5.8.0",
     "typescript": "2.6.2"
   },
+  "files": [
+    "bin",
+    "lib"
+  ],
   "homepage": "https://github.com/heroku/cli-engine-example",
   "keywords": [
     "cli-engine-example"
