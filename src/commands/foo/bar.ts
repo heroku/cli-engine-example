@@ -1,9 +1,8 @@
-const {Command} = require('@cli-engine/command')
+import cli from 'cli-ux'
+import {Command} from '@cli-engine/command'
 
-class Bar extends Command {
+export default class Bar extends Command {
   async run () {
-    this.out.log('running bar command')
+    cli.log('running bar command')
   }
 }
-
-module.exports = Bar
