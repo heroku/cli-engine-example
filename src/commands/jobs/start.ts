@@ -1,8 +1,8 @@
 import { Command } from '@cli-engine/command'
 import cli from 'cli-ux'
 
-export default class Bar extends Command {
+export default class JobsStart extends Command {
   async run() {
-    cli.log('running bar command')
+    cli.log('starting job... done')
   }
 }

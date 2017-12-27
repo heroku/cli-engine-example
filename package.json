@@ -9,6 +9,7 @@
   "bugs": "https://github.com/heroku/cli-engine-example/issues",
   "cli-engine": {
     "bin": "cli-engine",
+    "dirname": "cli-engine",
     "commands": "./lib/commands",
     "userPluginsEnabled": true,
     "hooks": {
