@@ -12,6 +12,11 @@
     "dirname": "cli-engine",
     "commands": "./lib/commands",
     "userPluginsEnabled": true,
+    "topics": {
+      "cli": {
+        "description": "example topic description"
+      }
+    },
     "hooks": {
       "init": "./lib/hooks/init"
     },
