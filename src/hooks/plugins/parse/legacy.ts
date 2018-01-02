@@ -1,4 +1,4 @@
-import { Hook, IHooks } from '@cli-engine/engine/lib/hooks'
+import { Hook } from '@cli-engine/engine/lib/hooks'
 
 function getID(c: any): string {
   let id = []
@@ -8,8 +8,8 @@ function getID(c: any): string {
 }
 
 export default class PluginsParseTestHook extends Hook<'plugins:parse'> {
-  async run(opts: IHooks['plugins:parse']) {
-    const m = opts.module
+  async run() {
+    const m = this.options.module
     m.commands = m.commands.map((c: any) => {
       if (!c.id) c.id = getID(c)
       return c
