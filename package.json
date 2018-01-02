@@ -40,6 +40,7 @@
     "@cli-engine/util": "^1.0.10",
     "@heroku-cli/tslint": "^1.0.3",
     "@types/ansi-styles": "^2.0.30",
+    "@types/debug": "^0.0.30",
     "@types/jest": "^22.0.0",
     "@types/node": "8.5.2",
     "jest": "22.0.4",
