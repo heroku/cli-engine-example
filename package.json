@@ -12,6 +12,7 @@
     "dirname": "cli-engine",
     "commands": "./lib/commands",
     "userPluginsEnabled": true,
+    "npmRegistry": "https://cli-npm.heroku.com",
     "topics": {
       "cli": {
         "description": "example topic description"
